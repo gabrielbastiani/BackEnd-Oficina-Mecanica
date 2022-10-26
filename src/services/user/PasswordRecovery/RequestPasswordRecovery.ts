@@ -37,7 +37,7 @@ class RequestPasswordRecovery {
     })
 
     await transporter.sendMail({
-      from: '"Blog - Builder Seu Negocio Online" <contato@builderseunegocioonline.com.br>',
+      from: '"Blog - Oficina Mecânica Online" <contato@builderseunegocioonline.com.br>',
       to: user.email,
       subject: "Recuperação de senha",
       html: `<div style="background-color: rgb(223, 145, 0); color: black; padding: 0 55px;">
@@ -52,7 +52,7 @@ class RequestPasswordRecovery {
             </article>
             
             <div style="background-color: rgb(223, 145, 0); color: black; padding: 0 55px;">
-                <h5>Blog Builder Seu Negocio Online</h5>
+                <h5>Blog Oficina Mecânica Online</h5>
             </div>`,
     });
 
